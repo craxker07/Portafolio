@@ -18,13 +18,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress"></div>
+
     <!-- Header & Navigation -->
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">&lt;Dev/&gt;</a>
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-text">Nicolas</span><span class="nav__logo-dot">.</span><span class="nav__logo-accent">dev</span>
+            </a>
             <ul class="nav__menu">
                 <li><a href="#inicio" class="nav__link active">Inicio</a></li>
                 <li><a href="#sobre-mi" class="nav__link">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
                 <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
                 <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
                 <li><a href="#contacto" class="nav__link">Contacto</a></li>
@@ -62,7 +71,7 @@
         <!-- About Section -->
         <section id="sobre-mi" class="about">
             <div class="container">
-                <h2 class="section__title">Sobre Mí</h2>
+                <h2 class="section__title"><span>Sobre</span> Mí</h2>
                 <div class="about__content">
                     <div class="about__text">
                         <p class="about__description">
@@ -98,80 +107,118 @@
             </div>
         </section>
 
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-item">
+                        <span class="stat-item__number" data-target="5">0</span>
+                        <span class="stat-item__plus">+</span>
+                        <p class="stat-item__label">Años de Experiencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-item__number" data-target="30">0</span>
+                        <span class="stat-item__plus">+</span>
+                        <p class="stat-item__label">Proyectos Completados</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-item__number" data-target="15">0</span>
+                        <span class="stat-item__plus">+</span>
+                        <p class="stat-item__label">CTFs Resueltos</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-item__number" data-target="8">0</span>
+                        <span class="stat-item__plus">+</span>
+                        <p class="stat-item__label">Certificaciones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experiencia" class="experience">
+            <div class="container">
+                <h2 class="section__title"><span>Experiencia</span> Profesional</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2022 – Presente</span>
+                            <h3 class="timeline__title">Pentester Senior</h3>
+                            <p class="timeline__company">Empresa de Ciberseguridad</p>
+                            <p class="timeline__desc">Realización de pruebas de penetración a infraestructuras críticas, evaluación de vulnerabilidades y generación de reportes ejecutivos.</p>
+                            <div class="timeline__tags">
+                                <span>Kali Linux</span><span>Metasploit</span><span>Burp Suite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2020 – 2022</span>
+                            <h3 class="timeline__title">Analista de Seguridad</h3>
+                            <p class="timeline__company">Consultora IT</p>
+                            <p class="timeline__desc">Monitoreo de amenazas, análisis de incidentes y hardening de servidores Linux/Windows. Implementación de políticas de seguridad corporativa.</p>
+                            <div class="timeline__tags">
+                                <span>SIEM</span><span>Wireshark</span><span>Nmap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2018 – 2020</span>
+                            <h3 class="timeline__title">Desarrollador & Sysadmin</h3>
+                            <p class="timeline__company">Startup Tecnológica</p>
+                            <p class="timeline__desc">Desarrollo de herramientas internas de automatización y gestión de infraestructura. Primer contacto con la seguridad ofensiva.</p>
+                            <div class="timeline__tags">
+                                <span>Python</span><span>Bash</span><span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Section -->
         <section id="habilidades" class="skills">
             <div class="container">
-                <h2 class="section__title">Habilidades Técnicas</h2>
+                <h2 class="section__title"><span>Habilidades</span> Técnicas</h2>
                 <div class="skills__grid">
-                    <!-- Frontend -->
                     <div class="skills__category">
                         <h3 class="skills__category-title">Frontend</h3>
                         <div class="skills__items">
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>HTML5 & CSS3</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 95%"></div>
-                                </div>
+                                <div class="skill__info"><span>HTML5 & CSS3</span><span>95%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 95%"></div></div>
                             </div>
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>JavaScript</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 90%"></div>
-                                </div>
+                                <div class="skill__info"><span>JavaScript</span><span>90%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 90%"></div></div>
                             </div>
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>React</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 85%"></div>
-                                </div>
+                                <div class="skill__info"><span>React</span><span>85%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 85%"></div></div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Backend -->
                     <div class="skills__category">
                         <h3 class="skills__category-title">Backend</h3>
                         <div class="skills__items">
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>Node.js</span>
-                                    <span>88%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 88%"></div>
-                                </div>
+                                <div class="skill__info"><span>Node.js</span><span>88%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 88%"></div></div>
                             </div>
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>Python</span>
-                                    <span>82%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 82%"></div>
-                                </div>
+                                <div class="skill__info"><span>Python</span><span>82%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 82%"></div></div>
                             </div>
                             <div class="skill">
-                                <div class="skill__info">
-                                    <span>PHP</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__progress" style="width: 75%"></div>
-                                </div>
+                                <div class="skill__info"><span>PHP</span><span>75%</span></div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 75%"></div></div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Tools & Others -->
                     <div class="skills__category">
                         <h3 class="skills__category-title">Herramientas</h3>
                         <div class="skills__tags">
@@ -190,85 +237,53 @@
         <!-- Projects Section -->
         <section id="proyectos" class="projects">
             <div class="container">
-                <h2 class="section__title">Proyectos Destacados</h2>
+                <h2 class="section__title"><span>Proyectos</span> Destacados</h2>
                 <div class="projects__grid">
-                    <!-- Project 1 -->
                     <article class="project-card">
                         <div class="project-card__image">
                             <img src="assets/images/project1.jpg" alt="E-commerce Platform">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">E-commerce Platform</h3>
-                            <p class="project-card__description">
-                                Plataforma de comercio electrónico con carrito de compras, 
-                                pagos integrados y panel de administración.
-                            </p>
+                            <p class="project-card__description">Plataforma de comercio electrónico con carrito de compras, pagos integrados y panel de administración.</p>
                             <div class="project-card__tags">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
+                                <span>React</span><span>Node.js</span><span>MongoDB</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fab fa-github"></i> Código
-                                </a>
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fab fa-github"></i> Código</a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- Project 2 -->
                     <article class="project-card">
                         <div class="project-card__image">
                             <img src="assets/images/project2.jpg" alt="Task Manager App">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Task Manager App</h3>
-                            <p class="project-card__description">
-                                Aplicación de gestión de tareas con autenticación, 
-                                drag-and-drop y notificaciones en tiempo real.
-                            </p>
+                            <p class="project-card__description">Aplicación de gestión de tareas con autenticación, drag-and-drop y notificaciones en tiempo real.</p>
                             <div class="project-card__tags">
-                                <span>Vue.js</span>
-                                <span>Firebase</span>
-                                <span>Tailwind</span>
+                                <span>Vue.js</span><span>Firebase</span><span>Tailwind</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fab fa-github"></i> Código
-                                </a>
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fab fa-github"></i> Código</a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- Project 3 -->
                     <article class="project-card">
                         <div class="project-card__image">
                             <img src="assets/images/project3.jpg" alt="Weather Dashboard">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Weather Dashboard</h3>
-                            <p class="project-card__description">
-                                Dashboard del clima con pronóstico de 7 días, mapas 
-                                interactivos y búsqueda por ciudades.
-                            </p>
+                            <p class="project-card__description">Dashboard del clima con pronóstico de 7 días, mapas interactivos y búsqueda por ciudades.</p>
                             <div class="project-card__tags">
-                                <span>JavaScript</span>
-                                <span>API REST</span>
-                                <span>Chart.js</span>
+                                <span>JavaScript</span><span>API REST</span><span>Chart.js</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fab fa-github"></i> Código
-                                </a>
-                                <a href="#" class="project-card__link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fab fa-github"></i> Código</a>
+                                <a href="#" class="project-card__link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
                     </article>
@@ -279,45 +294,27 @@
         <!-- Contact Section -->
         <section id="contacto" class="contact">
             <div class="container">
-                <h2 class="section__title">Contacto</h2>
+                <h2 class="section__title"><span>Contacto</span></h2>
                 <div class="contact__container">
                     <div class="contact__info">
                         <h3 class="contact__subtitle">Hablemos de tu proyecto</h3>
-                        <p class="contact__text">
-                            ¿Tienes una idea en mente? Estoy aquí para ayudarte a hacerla realidad. 
-                            No dudes en contactarme para discutir tu proyecto.
-                        </p>
-                        
+                        <p class="contact__text">¿Tienes una idea en mente? Estoy aquí para ayudarte a hacerla realidad. No dudes en contactarme para discutir tu proyecto.</p>
                         <div class="contact__details">
                             <div class="contact__item">
                                 <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h4>Email</h4>
-                                    <a href="mailto:tu@email.com">tu@email.com</a>
-                                </div>
+                                <div><h4>Email</h4><a href="mailto:tu@email.com">tu@email.com</a></div>
                             </div>
                             <div class="contact__item">
                                 <i class="fas fa-phone"></i>
-                                <div>
-                                    <h4>Teléfono</h4>
-                                    <a href="tel:+123456789">+34 123 456 789</a>
-                                </div>
+                                <div><h4>Teléfono</h4><a href="tel:+123456789">+34 123 456 789</a></div>
                             </div>
                         </div>
-                        
                         <div class="contact__social">
-                            <a href="#" class="contact__social-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="contact__social-link" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="contact__social-link" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                            <a href="#" class="contact__social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="contact__social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="contact__social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
-                    
                     <form class="contact__form" id="contactForm">
                         <div class="form__group">
                             <input type="text" id="name" name="name" required>
@@ -335,25 +332,19 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                             <label for="message">Mensaje</label>
                         </div>
-                        <button type="submit" class="btn btn--primary btn--full">
-                            Enviar Mensaje
-                        </button>
+                        <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">
-                &copy; 2024 Tu Nombre. Todos los derechos reservados.
-            </p>
+            <p class="footer__text">&copy; 2024 Nicolas Chavez. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
