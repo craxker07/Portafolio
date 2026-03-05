@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Chavez - Ingeniero en sistemas</title>
+    <meta name="description" content="Portafolio profesional de desarrollador web especializado en aplicaciones modernas y responsivas">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">&lt;Dev/&gt;</a>
+            <ul class="nav__menu">
+                <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav__link">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__greeting"> Hola, soy</span>
+                    <h1 class="hero__title">Nicolas Chavez</h1>
+                    <h2 class="hero__subtitle">Pentester e ingeniero de sistemas</h2>
+                    <p class="hero__description">
+                        Especialista en encontrar el "qué pasaría si..." 
+                        antes de que sea demasiado tarde. 
+                        Me dedico a la ciberseguridad ofensiva para garantizar la tranquilidad defensiva. 
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn--outline">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/profile.jpg" alt="Tu Nombre - Desarrollador Web" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <h2 class="section__title">Sobre Mí</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">
+                            Apasionado por la tecnología y el aprendizaje continuo. 
+                            Me dedico a construir, mantener y mejorar sistemas que facilitan la vida de las personas.
+                        </p>
+                        <p class="about__description">
+                            Mi enfoque combina la excelencia técnica con la creatividad 
+                            Me gusta entender cómo funcionan las cosas desde adentro para poder mejorarlas, 
+                            y cada proyecto es una oportunidad para aprender algo nuevo y construir algo 
+                        </p>
+                        
+                        <div class="about__info">
+                            <div class="about__item">
+                                <i class="fas fa-map-pin"></i>
+                                <span>Ubicación: Madrid, España</span>
+                            </div>
+                            <div class="about__item">
+                                <i class="fas fa-code"></i>
+                                <span>5+ años de experiencia</span>
+                            </div>
+                            <div class="about__item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>30+ proyectos completados</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn--primary" download>
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2 class="section__title">Habilidades Técnicas</h2>
+                <div class="skills__grid">
+                    <!-- Frontend -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Frontend</h3>
+                        <div class="skills__items">
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>React</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Backend</h3>
+                        <div class="skills__items">
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>Node.js</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>Python</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__info">
+                                    <span>PHP</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Herramientas</h3>
+                        <div class="skills__tags">
+                            <span class="skill__tag">Git</span>
+                            <span class="skill__tag">Docker</span>
+                            <span class="skill__tag">AWS</span>
+                            <span class="skill__tag">MongoDB</span>
+                            <span class="skill__tag">PostgreSQL</span>
+                            <span class="skill__tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos Destacados</h2>
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project1.jpg" alt="E-commerce Platform">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce Platform</h3>
+                            <p class="project-card__description">
+                                Plataforma de comercio electrónico con carrito de compras, 
+                                pagos integrados y panel de administración.
+                            </p>
+                            <div class="project-card__tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project2.jpg" alt="Task Manager App">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Task Manager App</h3>
+                            <p class="project-card__description">
+                                Aplicación de gestión de tareas con autenticación, 
+                                drag-and-drop y notificaciones en tiempo real.
+                            </p>
+                            <div class="project-card__tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Tailwind</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project3.jpg" alt="Weather Dashboard">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Weather Dashboard</h3>
+                            <p class="project-card__description">
+                                Dashboard del clima con pronóstico de 7 días, mapas 
+                                interactivos y búsqueda por ciudades.
+                            </p>
+                            <div class="project-card__tags">
+                                <span>JavaScript</span>
+                                <span>API REST</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section__title">Contacto</h2>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Hablemos de tu proyecto</h3>
+                        <p class="contact__text">
+                            ¿Tienes una idea en mente? Estoy aquí para ayudarte a hacerla realidad. 
+                            No dudes en contactarme para discutir tu proyecto.
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:tu@email.com">tu@email.com</a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <a href="tel:+123456789">+34 123 456 789</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <a href="#" class="contact__social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="contact__social-link" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="contact__social-link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Asunto</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                &copy; 2024 Tu Nombre. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
